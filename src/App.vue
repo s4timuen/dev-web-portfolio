@@ -1,11 +1,25 @@
 <template>
-  <router-view></router-view>
+  <div class="container-fluid">
+    <div class="row nav">
+      <NavBar class="col-12" />
+      <NavSidebar />
+    </div>
+    <div class="row">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
 <script>
+import NavBar from "@/components/header/NavBar.vue";
+import NavSidebar from "@/components/header/NavSidebar.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    NavBar,
+    NavSidebar,
+  },
   props: {},
   data: function () {
     return {};
@@ -17,13 +31,29 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 1%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  color: #ff7235 !important;
+}
+
+.nav {
+  padding-bottom: 2%;
+}
+/* global variables */
+:root {
+  --bg-color: #eaeaea;
 }
 </style>
