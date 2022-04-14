@@ -2,6 +2,7 @@ import Vuex from 'vuex';
 
 const store = new Vuex.Store({
     state: {
+        // PROD: replace with actual user data
         userData: require('@/assets/data/portfolio_data.json'),
         isNavOpen: false,
     },
@@ -14,10 +15,12 @@ const store = new Vuex.Store({
         },
     },
     getters: {
+        isNavOpen: state => state.isNavOpen,
         getUserData: state => state.userData,
         getUserFullName: state => state.userData.personal.first_name
             + " " + state.userData.personal.last_name,
-        isNavOpen: state => state.isNavOpen,
+        getUserAbout: state => state.userData.personal.about,
+        getUserMoreAbout: state => state.userData.personal.more_about,
     },
 });
 

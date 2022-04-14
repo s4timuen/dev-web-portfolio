@@ -63,7 +63,7 @@ export default {
 <style scoped lang="css">
 #navigation {
   background-color: var(--bg-color);
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 5px var(--primary-shadow);
   padding-top: 2%;
   padding-bottom: 2%;
 }

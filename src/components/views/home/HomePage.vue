@@ -1,13 +1,17 @@
 <template>
-  <div id="home-page">
-    <p>{{ $t("home-title") }}</p>
+  <div id="home-page" class="container-fluid">
+    <AboutMe />
   </div>
 </template>
 
 <script>
+import AboutMe from "@/components/views/home/AboutMe.vue";
+
 export default {
   name: "HomePage",
-  components: {},
+  components: {
+    AboutMe,
+  },
   props: {},
   data: function () {
     return {};

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="row nav">
+    <div id="nav" class="row">
       <NavBar class="col-12" />
       <NavSidebar />
     </div>
@@ -49,11 +49,13 @@ a:hover {
   color: #ff7235 !important;
 }
 
-.nav {
+#nav {
   padding-bottom: 2%;
 }
+
 /* global variables */
 :root {
   --bg-color: #eaeaea;
+  --primary-shadow: #8b8eaf;
 }
 </style>

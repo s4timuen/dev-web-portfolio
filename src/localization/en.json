@@ -1,9 +1,10 @@
 {
-    "home-title": "Title",
     "section-title-personal": "Personal",
     "section-title-skills": "Skills",
     "section-title-projcts": "Projects",
     "section-title-work": "Work experience",
     "section-title-education": "Education",
-    "footer-contact-title": "Contact"
+    "footer-contact-title": "Contact",
+    "about-me": "About Me: ",
+    "more-about-me": "More About Me: "
 }

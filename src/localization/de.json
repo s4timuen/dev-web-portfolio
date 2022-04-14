@@ -1,9 +1,10 @@
 {
-    "home-title": "Titel",
     "section-title-personal": "Person",
     "section-title-skills": "Fähigkeiten",
     "section-title-projcts": "Projekte",
     "section-title-work": "Arbeitserfahrung",
     "section-title-education": "Ausbildung",
-    "footer-contact-title": "Kontakt"
+    "footer-contact-title": "Kontakt",
+    "about-me": "Über mich: ",
+    "more-about-me": "Mehr über mich: "
 }
