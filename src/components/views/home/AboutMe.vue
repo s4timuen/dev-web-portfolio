@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div id="about-section" class="row rounded border-top">
+    <div id="about-section" class="row rounded">
       <!-- PROD: replace with actual image -->
       <img
         src="@/assets/img/placeholder_img_800x600.png"
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "AboutMe",
+  name: "AboutMeSection",
   components: {},
   props: {},
   data: function () {
@@ -50,7 +50,8 @@ export default {
 
 <style scoped lang="css">
 .container-fluid {
-  padding: 0% !important;
+  padding: 0%;
+  margin-bottom: 2%;
 }
 
 #about-section {

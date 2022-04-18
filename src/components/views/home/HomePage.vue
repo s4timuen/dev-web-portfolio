@@ -1,16 +1,19 @@
 <template>
   <div id="home-page" class="container-fluid">
-    <AboutMe />
+    <AboutMeSection />
+    <SkillsSection />
   </div>
 </template>
 
 <script>
-import AboutMe from "@/components/views/home/AboutMe.vue";
+import AboutMeSection from "@/components/views/home/AboutMe.vue";
+import SkillsSection from "@/components/views/home/Skills.vue";
 
 export default {
   name: "HomePage",
   components: {
-    AboutMe,
+    AboutMeSection,
+    SkillsSection,
   },
   props: {},
   data: function () {

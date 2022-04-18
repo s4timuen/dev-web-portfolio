@@ -1,6 +1,6 @@
 <template>
   <div class="container-fuid">
-    <nav id="navigation" class="row border rounded-pill">
+    <nav id="navigation" class="row border">
       <h1 class="col-1 col-md-2">{{ userFullName }}</h1>
       <ul id="links-list" class="col-9">
         <li>
@@ -66,6 +66,8 @@ export default {
   box-shadow: 0 4px 5px var(--primary-shadow);
   padding-top: 2%;
   padding-bottom: 2%;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
 }
 
 h1 {
@@ -89,8 +91,12 @@ ul {
 * hide burger-menu
 */
 @media screen and (min-width: 841px) {
-  #burger-menu { visibility: hidden; }  
-  #links-list { visibility: visible; }
+  #burger-menu {
+    visibility: hidden;
+  }
+  #links-list {
+    visibility: visible;
+  }
 }
 
 /* @media small
@@ -98,7 +104,11 @@ ul {
 * hide links-list
 */
 @media screen and (min-width: 0px) and (max-width: 840px) {
-  #burger-menu { visibility: visible; }  
-  #links-list { visibility: hidden; }
+  #burger-menu {
+    visibility: visible;
+  }
+  #links-list {
+    visibility: hidden;
+  }
 }
 </style>
