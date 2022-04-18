@@ -13,6 +13,31 @@
     },
     "education": {},
     "work": {},
-    "skills": {},
+    "skills": [
+        {
+            "skill_name": "placeholder_01",
+            "level": "intermediate"
+        },
+        {
+            "skill_name": "placeholder_02",
+            "level": "novice"
+        },
+        {
+            "skill_name": "placeholder_03",
+            "level": "advanced"
+        },
+        {
+            "skill_name": "placeholder_04",
+            "level": "intermediate"
+        },
+        {
+            "skill_name": "placeholder_05",
+            "level": "novice"
+        },
+        {
+            "skill_name": "placeholder_06",
+            "level": "advanced"
+        }
+    ],
     "projects": {}
 }
