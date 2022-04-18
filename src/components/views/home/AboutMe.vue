@@ -51,7 +51,7 @@ export default {
 <style scoped lang="css">
 .container-fluid {
   padding: 0%;
-  margin-bottom: 2%;
+  margin-bottom: var(--container-margin-bottom);
 }
 
 #about-section {
@@ -70,7 +70,7 @@ export default {
 }
 
 h2 {
-  margin-top: 1.5%;
+  margin-top: var(--margin-header-top);
   font-weight: bold;
 }
 </style>

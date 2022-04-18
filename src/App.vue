@@ -57,5 +57,7 @@ a:hover {
 :root {
   --bg-color: #eaeaea;
   --primary-shadow: #8b8eaf;
+  --margin-header-top: 2%;
+  --container-margin-bottom: 2%;
 }
 </style>

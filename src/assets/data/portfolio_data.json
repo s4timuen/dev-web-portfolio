@@ -5,7 +5,6 @@
         "birth_date": "01.01.2000",
         "about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
         "more_about": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-        
         "contact": {
             "phone": "0123/987654321",
             "mail": "test.user@email.com"
@@ -39,5 +38,27 @@
             "level": "advanced"
         }
     ],
-    "projects": {}
+    "projects": {
+        "git": {
+            "link": "test_link_git",
+            "user_name": "test git user"
+        },
+        "projects": [
+            {
+                "project_name": "placeholder_01",
+                "short_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "link": "placeholder_01_link"
+            },
+            {
+                "project_name": "placeholder_02",
+                "short_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "link": "placeholder_02_link"
+            },
+            {
+                "project_name": "placeholder_03",
+                "short_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                "link": "placeholder_03_link"
+            }
+        ]
+    }
 }

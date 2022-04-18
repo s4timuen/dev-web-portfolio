@@ -15,7 +15,7 @@
               src="@/assets/icons/placeholder_icon.png"
               :alt="skill.skill_name"
               loading="lazy"
-              class="icon-card border rounded-pill"
+              class="icon-card border rounded-circle"
             />
             <p class="skill-name">{{ capitalize(skill.skill_name) }}</p>
             <p>{{ $t("skill-level") + capitalize(skill.level) }}</p>
@@ -45,7 +45,6 @@ export default {
   },
   mounted: function () {
     this.skills = this.$store.getters.getUserSkills;
-    console.log(this.skills);
   },
 };
 </script>
@@ -53,12 +52,12 @@ export default {
 <style scoped lang="css">
 .container-fluid {
   padding: 0%;
-  margin-bottom: 2%;
+  margin-bottom: var(--container-margin-bottom);
 }
 
 h2 {
   font-weight: bold;
-  margin-top: 2%;
+  margin-top: var(--margin-header-top);
 }
 
 .icon-card {
