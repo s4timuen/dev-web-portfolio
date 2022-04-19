@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div id="skills-section" class="row rounded border-top">
-      <h2 class="col-12">{{ $t("skills-title") }}</h2>
+      <h2 class="col-12">{{ $t("section-title-skills") }}</h2>
       <div class="col-8 offset-2">
         <div class="row">
           <div
@@ -60,6 +60,7 @@ h2 {
   margin-top: var(--margin-header-top);
 }
 
+/* icon card and content of card */
 .icon-card {
   width: 10rem;
   height: 10rem;

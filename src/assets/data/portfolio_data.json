@@ -11,7 +11,29 @@
         }
     },
     "education": {},
-    "work": {},
+    "work_experience": [
+        {
+            "start_date": "01.01.2000",
+            "end_date": "31.12.2000",
+            "label": "placeholder_label_01",
+            "employer": "employer_placeholder_01",
+            "occupation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        {
+            "start_date": "01.01.2001",
+            "end_date": "31.12.2001",
+            "label": "placeholder_label_02",
+            "employer": "employer_placeholder_02",
+            "occupation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        {
+            "start_date": "01.01.2002",
+            "end_date": "31.12.2002",
+            "label": "placeholder_label_03",
+            "employer": "employer_placeholder_03",
+            "occupation": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        }
+    ],
     "skills": [
         {
             "skill_name": "placeholder_01",

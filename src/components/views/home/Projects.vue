@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div id="projects-section" class="row rounded border-top">
-      <h2 class="col-12">{{ $t("projects-title") }}</h2>
+      <h2 class="col-12">{{ $t("section-title-projcts") }}</h2>
       <div class="row project-cards-section">
         <div
           class="col-11 col-md-5 col-lg-3 offset-1 offset-sm-0 project-card"
@@ -78,13 +78,17 @@ h3 {
   margin-top: var(--margin-header-top);
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 #projects-section {
   justify-content: center;
+}
+
+/* project card and content of card */
+.project-card {
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 10px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 1%;
 }
 
 .project-name {
@@ -93,16 +97,13 @@ img {
   margin-bottom: 0%;
 }
 
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .project-cards-section {
   justify-content: center;
   padding: 0%;
-}
-
-.project-card {
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 10px;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  margin-top: 2%;
 }
 </style>

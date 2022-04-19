@@ -2,13 +2,13 @@
     "section-title-personal": "Personal",
     "section-title-skills": "Skills",
     "section-title-projcts": "Projects",
-    "section-title-work": "Work experience",
+    "section-title-work": "Work Experience",
     "section-title-education": "Education",
     "footer-contact-title": "Contact",
     "about-me": "About Me",
     "more-about-me": "More About Me",
-    "skills-title": "Skills",
     "skill-level": "Level: ",
     "projects-title": "Projects",
-    "git-link": "GitHub: "
+    "git-link": "GitHub: ",
+    "to": "to"
 }
