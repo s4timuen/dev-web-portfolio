@@ -10,7 +10,45 @@
             "mail": "test.user@email.com"
         }
     },
-    "education": {},
+    "education": {
+        "credentials": [
+            {
+                "issue_date": "01.01.2021",
+                "institution": "institution_placeholder_02",
+                "certificate": "placeholder_certificate_02"
+            },
+            {
+                "issue_date": "01.01.2020",
+                "institution": "institution_placeholder_01",
+                "certificate": "placeholder_certificate_01"
+            }
+        ],
+        "university": [
+            {
+                "start_date": "01.01.2013",
+                "end_date": "31.12.2015",
+                "institution": "university_placeholder_02",
+                "degree": "placeholder_university_degree_02",
+                "grade": "1.0"
+            },
+            {
+                "start_date": "01.01.2009",
+                "end_date": "31.12.2012",
+                "institution": "university_placeholder_01",
+                "degree": "placeholder_university_degree_01",
+                "grade": "2.0"
+            }
+        ],
+        "school": [
+            {
+                "start_date": "01.01.2000",
+                "end_date": "31.12.2008",
+                "institution": "school_placeholder_01",
+                "degree": "placeholder_school_degree_01",
+                "grade": "3.0"
+            }
+        ]
+    },
     "work_experience": [
         {
             "start_date": "01.01.2000",

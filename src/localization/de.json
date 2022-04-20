@@ -10,5 +10,11 @@
     "skill-level": "Niveau: ",
     "projects-title": "Projekte",
     "git-link": "GitHub: ",
+    "school": "Schule",
+    "university": "Universität",
+    "credentials": "Qualifikationen",
+    "degree": "Abschluss: ",
+    "grade": "Note: ",
+    "certificate": "Zertifikat: ",
     "to": "bis"
 }
