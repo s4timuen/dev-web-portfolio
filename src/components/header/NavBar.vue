@@ -1,7 +1,7 @@
 <template>
   <div class="container-fuid">
     <nav id="navigation" class="row border">
-      <h1 class="col-1 col-md-2">{{ userFullName }}</h1>
+      <h1 class="col-1 col-md-2">{{ user_full_name }}</h1>
       <ul id="links-list" class="col-9">
         <li>
           <a href="#personal" class="nav-link">{{
@@ -28,7 +28,7 @@
         </li>
         <li>
           <a href="#contact" class="nav-link">{{
-            $t("footer-contact-title")
+            $t("section-title-contact")
           }}</a>
         </li>
       </ul>
@@ -47,16 +47,16 @@ export default {
   },
   props: {},
   data: function () {
-    return {};
+    return {
+      user_full_name: "",
+    };
   },
-  computed: {
-    userFullName() {
-      return this.$store.getters.getUserFullName;
-    },
-  },
+  computed: {},
   watch: {},
   methods: {},
-  mounted: function () {},
+  mounted: function () {
+    this.user_full_name = this.$store.getters.getUserFullName;
+  },
 };
 </script>
 

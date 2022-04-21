@@ -4,20 +4,20 @@
       <!-- PROD: replace with actual image -->
       <img
         src="@/assets/img/placeholder_img_800x600.png"
-        :alt="imgAlt"
+        :alt="img_alt"
         loading="lazy"
         id="about-img"
         class="col-12 col-md-6"
       />
       <div id="about-text" class="col-12 col-md-6 rounded">
         <h2>{{ $t("about-me") }}</h2>
-        <p>{{ aboutMe }}</p>
+        <p>{{ about_me }}</p>
       </div>
     </div>
     <div class="row">
       <div id="more-about-text" class="col-12 rounded">
         <h2>{{ $t("more-about-me") }}</h2>
-        <p>{{ moreAboutMe }}</p>
+        <p>{{ more_about_me }}</p>
       </div>
     </div>
   </div>
@@ -29,22 +29,20 @@ export default {
   components: {},
   props: {},
   data: function () {
-    return {};
+    return {
+      img_alt: "",
+      about_me: "",
+      more_about_me: "",
+    };
   },
-  computed: {
-    imgAlt() {
-      return this.$store.getters.getUserFullName;
-    },
-    aboutMe() {
-      return this.$store.getters.getUserAbout;
-    },
-    moreAboutMe() {
-      return this.$store.getters.getUserMoreAbout;
-    },
-  },
+  computed: {},
   watch: {},
   methods: {},
-  mounted: function () {},
+  mounted: function () {
+    this.img_alt = this.$store.getters.getUserFullName;
+    this.about_me = this.$store.getters.getUserAbout;
+    this.more_about_me = this.$store.getters.getUserMoreAbout;
+  },
 };
 </script>
 

@@ -33,7 +33,7 @@
           </li>
           <li>
             <a href="#contact" class="nav-link">{{
-              $t("footer-contact-title")
+              $t("section-title-contact")
             }}</a>
           </li>
         </ul>

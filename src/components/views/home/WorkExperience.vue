@@ -4,7 +4,7 @@
       <h2 class="col-12">{{ $t("section-title-work") }}</h2>
       <div
         class="col-11 work-card border rounded"
-        v-for="(work, key) in workExperience"
+        v-for="(work, key) in work_experience"
         :key="key"
       >
         <div class="row">
@@ -42,7 +42,7 @@ export default {
   props: {},
   data: function () {
     return {
-      workExperience: {},
+      work_experience: {},
     };
   },
   computed: {},
@@ -51,7 +51,7 @@ export default {
     capitalize,
   },
   mounted: function () {
-    this.workExperience = this.$store.getters.getUserWorkExperience;
+    this.work_experience = this.$store.getters.getUserWorkExperience;
   },
 };
 </script>
