@@ -46,6 +46,7 @@ export default {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 a:hover {

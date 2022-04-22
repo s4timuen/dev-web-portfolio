@@ -9,32 +9,52 @@
       <div v-if="isPanelOpen" class="sidebar-panel">
         <ul class="sidebar-panel-nav">
           <li>
-            <a href="#personal" class="nav-link">{{
-              $t("section-title-personal")
-            }}</a>
+            <a
+              href="#about-me-section"
+              @click="closeSidebarPanel()"
+              class="nav-link"
+              >{{ $t("section-title-about-me") }}</a
+            >
           </li>
           <li>
-            <a href="#skills" class="nav-link">{{
-              $t("section-title-skills")
-            }}</a>
+            <a
+              href="#skills-section"
+              @click="closeSidebarPanel()"
+              class="nav-link"
+              >{{ $t("section-title-skills") }}</a
+            >
           </li>
           <li>
-            <a href="#projects" class="nav-link">{{
-              $t("section-title-projcts")
-            }}</a>
+            <a
+              href="#projects-section"
+              @click="closeSidebarPanel()"
+              class="nav-link"
+              >{{ $t("section-title-projcts") }}</a
+            >
           </li>
           <li>
-            <a href="#work" class="nav-link">{{ $t("section-title-work") }}</a>
+            <a
+              href="#work-experience-section"
+              @click="closeSidebarPanel()"
+              class="nav-link"
+              >{{ $t("section-title-work") }}</a
+            >
           </li>
           <li>
-            <a href="#education" class="nav-link">{{
-              $t("section-title-education")
-            }}</a>
+            <a
+              href="#education-section"
+              @click="closeSidebarPanel()"
+              class="nav-link"
+              >{{ $t("section-title-education") }}</a
+            >
           </li>
           <li>
-            <a href="#contact" class="nav-link">{{
-              $t("section-title-contact")
-            }}</a>
+            <a
+              href="#contact-section"
+              @click="closeSidebarPanel()"
+              class="nav-link"
+              >{{ $t("section-title-contact") }}</a
+            >
           </li>
         </ul>
       </div>

@@ -4,30 +4,32 @@
       <h1 class="col-1 col-md-2">{{ user_full_name }}</h1>
       <ul id="links-list" class="col-9">
         <li>
-          <a href="#personal" class="nav-link">{{
-            $t("section-title-personal")
+          <a href="#about-me-section" class="nav-link">{{
+            $t("section-title-about-me")
           }}</a>
         </li>
         <li>
-          <a href="#skills" class="nav-link">{{
+          <a href="#skills-section" class="nav-link">{{
             $t("section-title-skills")
           }}</a>
         </li>
         <li>
-          <a href="#projects" class="nav-link">{{
+          <a href="#projects-section" class="nav-link">{{
             $t("section-title-projcts")
           }}</a>
         </li>
         <li>
-          <a href="#work" class="nav-link">{{ $t("section-title-work") }}</a>
+          <a href="#work-experience-section" class="nav-link">{{
+            $t("section-title-work")
+          }}</a>
         </li>
         <li>
-          <a href="#education" class="nav-link">{{
+          <a href="#education-section" class="nav-link">{{
             $t("section-title-education")
           }}</a>
         </li>
         <li>
-          <a href="#contact" class="nav-link">{{
+          <a href="#contact-section" class="nav-link">{{
             $t("section-title-contact")
           }}</a>
         </li>

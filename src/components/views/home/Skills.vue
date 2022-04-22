@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import capitalize from "@/helpers/utilities.js";
+import { capitalize } from "@/helpers/utilities.js";
 
 export default {
   name: "SkillsSection",

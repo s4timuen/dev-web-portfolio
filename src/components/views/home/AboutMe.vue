@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div id="about-section" class="row rounded">
+    <div id="about-me-section" class="row rounded">
       <!-- PROD: replace with actual image -->
       <img
         src="@/assets/img/placeholder_img_800x600.png"
@@ -52,7 +52,7 @@ export default {
   margin-bottom: var(--container-margin-bottom);
 }
 
-#about-section {
+#about-me-section {
   display: flex;
   align-items: center;
   padding: 2%;
