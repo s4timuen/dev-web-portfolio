@@ -7,18 +7,21 @@
     <div class="row">
       <router-view></router-view>
     </div>
+    <ScrollToTop />
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/header/NavBar.vue";
 import NavSidebar from "@/components/header/NavSidebar.vue";
+import ScrollToTop from "@/components/overlays/ScrollToTop.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
     NavSidebar,
+    ScrollToTop,
   },
   props: {},
   data: function () {
@@ -50,7 +53,10 @@ a:hover {
 }
 
 #nav {
-  padding-bottom: 2%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /* global variables */
