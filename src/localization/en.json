@@ -17,5 +17,12 @@
     "degree": "Degree: ",
     "grade": "Grade: ",
     "certificate": "Certificate: ",
-    "to": "to"
+    "to": "to",
+    "name": "Name: ",
+    "email": "Email: ",
+    "message": "Message: ",
+    "placeholder-name": "Enter your name.",
+    "placeholder-email": "Enter your email.",
+    "placeholder-message": "Enter your message.",
+    "submit": "Submit"
 }

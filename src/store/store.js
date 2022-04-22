@@ -25,6 +25,7 @@ const store = new Vuex.Store({
         getUserProjects: state => state.userData.projects,
         getUserWorkExperience: state => state.userData.work_experience,
         getUserEducation: state => state.userData.education,
+        getUserContactUrl: state => state.userData.getUserContactUrl,
     },
 });
 

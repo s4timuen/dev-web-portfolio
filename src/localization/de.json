@@ -17,5 +17,12 @@
     "degree": "Abschluss: ",
     "grade": "Note: ",
     "certificate": "Zertifikat: ",
-    "to": "bis"
+    "to": "bis",
+    "name": "Name: ",
+    "email": "Email: ",
+    "message": "Nachricht: ",
+    "placeholder-name": "Geben sie ihren Namen ein.",
+    "placeholder-email": "Geben sie ihre Email-Adresse ein.",
+    "placeholder-message": "Geben sie ihre Nachricht ein.",
+    "submit": "Absenden"
 }

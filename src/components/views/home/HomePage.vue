@@ -5,6 +5,7 @@
     <ProjectsSection />
     <WorkExperienceSection />
     <EducationSection />
+    <ContactSection />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import SkillsSection from "@/components/views/home/Skills.vue";
 import ProjectsSection from "@/components/views/home/Projects.vue";
 import WorkExperienceSection from "@/components/views/home/WorkExperience.vue";
 import EducationSection from "@/components/views/home/Education.vue";
+import ContactSection from "@/components/views/home/Contact.vue";
 
 export default {
   name: "HomePage",
@@ -23,6 +25,7 @@ export default {
     ProjectsSection,
     WorkExperienceSection,
     EducationSection,
+    ContactSection,
   },
   props: {},
   data: function () {

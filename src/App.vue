@@ -55,7 +55,7 @@ a:hover {
 
 /* global variables */
 :root {
-  --bg-color: #eaeaea;
+  --bg-color: #f8f8f8;
   --primary-shadow: #8b8eaf;
   --margin-header-top: 2%;
   --container-margin-bottom: 2%;
