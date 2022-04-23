@@ -1,11 +1,14 @@
 <template>
   <div class="container-fluid">
     <div id="nav" class="row">
-      <NavBar class="col-12" />
+      <NavBar />
       <NavSidebar />
     </div>
     <div class="row">
       <router-view></router-view>
+    </div>
+    <div class="row">
+      <LegalNotice />
     </div>
     <ScrollToTop />
   </div>
@@ -14,6 +17,7 @@
 <script>
 import NavBar from "@/components/header/NavBar.vue";
 import NavSidebar from "@/components/header/NavSidebar.vue";
+import LegalNotice from "@/components/footer/LegalNotice.vue";
 import ScrollToTop from "@/components/overlays/ScrollToTop.vue";
 
 export default {
@@ -21,6 +25,7 @@ export default {
   components: {
     NavBar,
     NavSidebar,
+    LegalNotice,
     ScrollToTop,
   },
   props: {},

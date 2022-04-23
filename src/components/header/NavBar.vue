@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fuid">
+  <div class="container-fluid">
     <nav id="navigation" class="row border justify-content-between">
       <h1 class="col-2">{{ user_full_name }}</h1>
       <!-- links to section -->
@@ -117,6 +117,18 @@ ul {
   width: fit-content;
   align-self: center;
   margin-right: 2%;
+  background-color: #fff;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-size: 1rem;
+
+  transition: 0.3s;
+}
+
+#language-selection:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* @media large
