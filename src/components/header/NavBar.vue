@@ -1,8 +1,9 @@
 <template>
   <div class="container-fuid">
-    <nav id="navigation" class="row border">
-      <h1 class="col-1 col-md-2">{{ user_full_name }}</h1>
-      <ul id="links-list" class="col-9">
+    <nav id="navigation" class="row border justify-content-between">
+      <h1 class="col-2">{{ user_full_name }}</h1>
+      <!-- links to section -->
+      <ul id="links-list" class="col-8 justify-content-center">
         <li>
           <a href="#about-me-section" class="nav-link">{{
             $t("section-title-about-me")
@@ -34,7 +35,19 @@
           }}</a>
         </li>
       </ul>
-      <BurgerMenu id="burger-menu" class="col-2 col-md-1" />
+      <!-- language selection -->
+      <select
+        name="language"
+        id="language-selection"
+        class="col-1"
+        v-model="$i18n.locale"
+      >
+        <option v-for="locale in locales" :key="locale" :value="locale">
+          {{ locale }}
+        </option>
+      </select>
+      <!-- burger menu -->
+      <BurgerMenu id="burger-menu" class="col-1" />
     </nav>
   </div>
 </template>
@@ -51,6 +64,7 @@ export default {
   data: function () {
     return {
       user_full_name: "",
+      locales: [],
     };
   },
   computed: {},
@@ -58,6 +72,13 @@ export default {
   methods: {},
   mounted: function () {
     this.user_full_name = this.$store.getters.getUserFullName;
+    // get available locales and show current as default selection
+    this.locales.push(this.$i18n.locale);
+    this.$i18n.availableLocales.forEach((locale) => {
+      if (locale !== this.$i18n.locale) {
+        this.locales.push(locale);
+      }
+    });
   },
 };
 </script>
@@ -70,12 +91,14 @@ export default {
   padding-bottom: 2%;
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
+  align-content: center;
 }
 
 h1 {
   margin-bottom: 0%;
 }
 
+/* navigation */
 ul {
   list-style-type: none;
   display: flex;
@@ -88,16 +111,24 @@ ul {
   font-size: 1.25rem;
 }
 
+/* localization */
+#language-selection {
+  height: min-content;
+  width: fit-content;
+  align-self: center;
+  margin-right: 2%;
+}
+
 /* @media large
 * show links-list
 * hide burger-menu
 */
 @media screen and (min-width: 841px) {
   #burger-menu {
-    visibility: hidden;
+    display: none;
   }
   #links-list {
-    visibility: visible;
+    display: flex;
   }
 }
 
@@ -107,10 +138,10 @@ ul {
 */
 @media screen and (min-width: 0px) and (max-width: 840px) {
   #burger-menu {
-    visibility: visible;
+    display: flex;
   }
   #links-list {
-    visibility: hidden;
+    display: none;
   }
 }
 </style>
